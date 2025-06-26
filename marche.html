@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Le Grand Marché de Sanguinem</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&display=swap" rel="stylesheet"/>
+  <style>
+    :root {
+      --sang-foncé: #0c0c0c;
+      --sang-rouge: #800000;
+      --sang-rouge-clair: #ff4d4d;
+      --sang-accent: #ff2a2a;
+      --gris-clair: #e0e0e0;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Cinzel', serif;
+    }
+
+    body {
+      background-color: var(--sang-foncé);
+      color: var(--gris-clair);
+      line-height: 1.6;
+    }
+
+    header {
+      background-color: #1a0000;
+      color: var(--sang-accent);
+      padding: 2rem 1rem;
+      text-align: center;
+      border-bottom: 2px solid var(--sang-rouge);
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 3rem;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      margin-top: 1rem;
+    }
+
+    nav a {
+      color: var(--gris-clair);
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+      color: var(--sang-rouge-clair);
+    }
+
+    .container {
+      padding: 2rem;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+    h2 {
+      color: var(--sang-rouge-clair);
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+
+    section {
+      margin-bottom: 3rem;
+    }
+
+    #about {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 2rem;
+      align-items: center;
+    }
+
+    #about img {
+      width: 100%;
+      border-radius: 8px;
+      box-shadow: 0 0 15px rgba(255, 77, 77, 0.1);
+    }
+
+    #seasonal {
+      background-color: #1a1a1a;
+      border-left: 4px solid var(--sang-rouge);
+      border-radius: 6px;
+      padding: 2rem;
+    }
+
+    .seasonal-content {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem;
+      justify-content: center;
+    }
+
+    .fiche-technique {
+      background-color: #1a1a1a;
+      padding: 1.5rem;
+      border-left: 5px solid #800000;
+      margin: 2rem 0;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(255, 0, 0, 0.1);
+      transition: background 0.3s ease;
+    }
+
+    .fiche-technique:hover {
+      background-color: #222;
+    }
+
+    a.button {
+      display: inline-block;
+      margin-top: 2rem;
+      padding: 1rem 2.5rem;
+      background: #800000;
+      color: white;
+      text-decoration: none;
+      border-radius: 8px;
+      font-weight: bold;
+      font-size: 1rem;
+      transition: background 0.3s ease, transform 0.2s ease;
+    }
+
+    a.button:hover {
+      background-color: #a00000;
+      transform: scale(1.05);
+    }
+
+    .card {
+      background-color: #121212;
+      border: 1px solid var(--gris-clair);
+      border-radius: 8px;
+      padding: 1.5rem;
+      width: 270px;
+      text-align: center;
+      transition: transform 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-6px);
+    }
+
+    .card img {
+      width: 100%;
+      border-radius: 4px;
+      margin-bottom: 1rem;
+    }
+
+    #founders .founder-grid {
+      display: flex;
+      gap: 2rem;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .founder {
+      background-color: #1a1a1a;
+      border-left: 4px solid var(--sang-rouge);
+      border-radius: 6px;
+      padding: 1.5rem;
+      width: 280px;
+    }
+
+    .founder h3 {
+      color: var(--sang-rouge-clair);
+      margin-bottom: 0.5rem;
+    }
+
+    footer {
+      background-color: #1a0000;
+      color: #888;
+      text-align: center;
+      padding: 1.5rem 0;
+      font-size: 0.9rem;
+      border-top: 2px solid var(--sang-rouge);
+    }
+
+    @media (max-width: 768px) {
+      #about {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Le Grand Marché de Sanguinem</h1>
+    <p style="text-align:center;">
+      <a href="inventaire.html" class="button">En savoir plus sur les marchandises.</a>
+    </p>
+  </div>
+  </header>
+
+  <div class="container">
+    <section id="about">
+      <div>
+        <h2>Un carrefour discret au cœur de la Basse-Ville</h2>
+        <p>
+          Situé dans les ruelles obscures de la Basse-Ville de Sanguinem, notre
+          marché assure le commerce entre tous les humains vassaux de l’Empire
+          vampirique.
+        </p>
+        <p>
+          Notre objectif&nbsp;: diversifier les matériaux, denrées et savoir-faire
+          provenant des quatre coins du monde. Chaque entrée est pensée pour
+          être adaptée facilement : bannière, décor et signalétique peuvent
+          évoluer selon la délégation invitée.
+        </p>
+      </div>
+      <img
+        src="https://cdn.discordapp.com/attachments/1384582306135674930/1387849326692139159/Copilot_20250626_193736.png?ex=685ed6e8&is=685d8568&hm=4955822a9bd702f36ddbcfbd438f00d24d92f7d5abbfaaa2c2cf2d0662813ca0&"
+        alt="Vue nocturne du marché"
+      />
+    </section>
+
+    <section id="seasonal">
+      <h2>Thème invité&nbsp;: Les Trois Royaume de Chine.</h2>
+      <div class="seasonal-content">
+        <div class="card">
+          <img
+            src="https://cdn.discordapp.com/attachments/1384582306135674930/1387854134656372896/Copilot_20250626_195642.png?ex=685edb62&is=685d89e2&hm=c048da2f0aab9eb7bceaf31177d4a79de286655a2de807386d7eba1fc9fa40b8&"
+            alt="Lanterne chinoise"
+          />
+          <h3>Lanterne impériale</h3>
+          <p>
+            Symboles de prospérité, ces lanternes ornent l’allée principale
+            pendant tout l’équinoxe d’automne.
+          </p>
+        </div>
+
+        <div class="card">
+          <img
+            src="https://cdn.discordapp.com/attachments/1384582306135674930/1387854727353729094/Copilot_20250626_195902.png?ex=685edbf0&is=685d8a70&hm=2d46f0579bdad47e698df731017be8ca40593685f24c6c3f9fb58f3de0b0c5eb&"
+            alt="Dragon chinois"
+          />
+          <h3>Statue de Dragon</h3>
+          <p>
+            Gardien ancestral installé à l’arche nord ; il accueille les
+            négociants avec bienveillance… et vigilance.
+          </p>
+        </div>
+      </div>
+
+      <p style="margin-top: 2rem">
+        💡 <em>Informations&nbsp;:</em> Pour toute modifications des ornements et autre, veuillez en faire part à Sūrya Savari ou Brahma Savari.
+      </p>
+    </section>
+
+    <section id="founders">
+      <h2>Fondateurs</h2>
+      <div class="founder-grid">
+        <div class="founder">
+          <h3>Surya Savari</h3>
+          <p>
+            Visionnaire et négociant, Surya a imaginé le marché afin de relier
+            les vassaux humains à l’Empire.
+          </p>
+        </div>
+
+        <div class="founder">
+          <h3>Brahma Savari</h3>
+          <p>
+            L’intellectuel du groupe, Brahma veille à la cohérence culturelle et
+            à l’identité historique du marché.
+          </p>
+        </div>
+
+        <div class="founder">
+          <h3>Ganesh Savari</h3>
+          <p>
+            Responsable de la logistique, Ganesh coordonne les flux de marchandises
+            et les aménagements saisonniers.
+          </p>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 Le Grand Marché de Sanguinem — Tous droits réservés.</p>
+  </footer>
+</body>
+</html>
